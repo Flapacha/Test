@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.wedev.test.testapp.Activities.PostActivity"
+    tools:showIn="@layout/activity_post">
+    <RelativeLayout
+        android:id="@+id/activity_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/postRecyclerView"
+        ></android.support.v7.widget.RecyclerView>
+    </RelativeLayout>
+    <LinearLayout
+        android:background="#ad060606"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/loading"
+        android:layout_height="match_parent">
+
+        <com.github.rahatarmanahmed.cpv.CircularProgressView
+            android:padding="35dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cpv_animAutostart="true"
+            app:cpv_indeterminate="true"
+            app:cpv_color="#fff"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CHARGEMENT ..."
+            android:textColor="#fff"
+            android:textSize="25dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:gravity="center"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:background="#ad060606"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/loading_failed"
+        android:visibility="gone"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/desole"
+            android:padding="35dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Le chargement des données a échouer"
+            android:textColor="#fff"
+            android:textSize="25dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:gravity="center"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reesayer"
+            android:background="#fff"
+            android:layout_marginTop="35dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/loading_failed_reload"
+
+            />
+
+    </LinearLayout>
+</android.widget.RelativeLayout>

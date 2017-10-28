@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">TestApp</string>
+    <string name="title_activity_home">Acceuil</string>
+    <string name="title_activity_home_app">HomeAppActivity</string>
+    <string name="title_activity_album_content">Album Photo</string>
+    <string name="title_activity_album_list_activty">Liste des Albums</string>
+    <string name="title_activity_post">Fils des Posts</string>
+    <string name="title_activity_photo_gallery">PhotoGalleryActivity</string>
+    <string name="title_activity_commentaires">Commentaires</string>
+    <string name="home_menu_posts">POSTES</string>
+    <string name="home_menu_albums">ALBUMS</string>
+    <string name="home_menu_utilisateur">UTILISATEUR</string>
+    <string name="home_menu_photo">PHOTOS</string>
+    <string name="title_activity_user_list">Liste des Utilisateurs</string>
+    <string name="title_activity_all_photo">Photos</string>
+
+</resources>

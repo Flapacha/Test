@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:layout_marginBottom="7dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:minHeight="60dp"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:layout_gravity="center|center_vertical"
+        android:background="@drawable/comments_background"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="comments title"
+            android:textSize="15dp"
+            android:textColor="#fff"
+            android:id="@+id/commentTitle"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="comments"
+            android:textSize="15dp"
+            android:textColor="#fff"
+            android:id="@+id/commentBody"
+            />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#9dd5ff"
+        android:padding="5dp"
+        >
+
+
+
+
+        <TextView
+
+            android:id="@+id/authorMail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="jacoumbo@gmailcom"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textStyle="bold"
+            />
+
+    </RelativeLayout>
+</LinearLayout>
