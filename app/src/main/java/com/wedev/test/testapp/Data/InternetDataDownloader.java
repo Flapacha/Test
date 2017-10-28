@@ -22,7 +22,6 @@ import java.net.HttpURLConnection;
 import java.net.URISyntaxException;
 import java.net.URL;
 import java.util.HashMap;
-import java.util.logging.LogRecord;
 
 /**
  * Created by Javenchi on 27/10/2017.
@@ -80,14 +79,12 @@ public class InternetDataDownloader {
     * l'objet listener reçoit les differents évênement de l'avancer du telechargement
     * */
     public void downloadData(URL url , DownloadListener listener){
-        Log.e("DOWNLOADING REQUESTED","url=>"+url.toString());
 
         downloadThread.postDataDownload(url,listener,TYPE_TEXT);
 
     }
 
     public void downloadData(URL url , JSONObjectDownloadListener listener){
-        Log.e("DOWNLOADING REQUESTED","url=>"+url.toString());
 
         if(downloadThread==null) {
             downloadThread = new DownloaderThreadHandler("Downloader");
@@ -99,7 +96,6 @@ public class InternetDataDownloader {
     }
 
     public void downloadData(URL url , JSONArrayDownloadListener listener){
-        Log.e("DOWNLOADING REQUESTED","url=>"+url.toString());
 
         if(downloadThread==null) {
             downloadThread = new DownloaderThreadHandler("Downloader");
@@ -167,7 +163,6 @@ public class InternetDataDownloader {
 
         @Override
         public void onLooperPrepared(){
-            Log.e("Per","Looper Prepared");
             mHandler = new Handler() {
 
 
@@ -175,7 +170,6 @@ public class InternetDataDownloader {
                 @Override
                 public void handleMessage(Message m){
 
-                    Log.e("TEST","WE ARE HANDLING MESSAGE");
                    HashMap<String,Object> map = (HashMap<String, Object>) m.obj;
 
                     URL url = (URL) map.get("URL");

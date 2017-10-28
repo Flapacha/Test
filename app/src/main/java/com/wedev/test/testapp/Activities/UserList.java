@@ -139,7 +139,6 @@ public class UserList extends AppCompatActivity implements DataListener {
 
         if(success){
             userList = (ArrayList<Utilisateur>) data;
-            Log.e("TELECHARGEMENT  ","TELECHARGEMENT TERMINER=>"+userList.size());
             initActivity();
         }
 

@@ -172,7 +172,6 @@ public class PostActivity extends AppCompatActivity implements DataListener{
 
         public Adapter(ArrayList<Post> posts){
             mArray = posts;
-            Log.e("ADAPTER POST SIZE",""+mArray.size());
         }
 
         @Override

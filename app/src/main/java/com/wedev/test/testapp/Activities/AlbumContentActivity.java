@@ -180,7 +180,6 @@ public class AlbumContentActivity extends AppCompatActivity implements DataListe
 
         public void bindView(Photo photo){
 
-            Log.e("FLAP","-----------FLAP=>"+photo.getThumbnailUrl());
             Picasso.with(AlbumContentActivity.this)
                     .load(photo.getThumbnailUrl()).into(imageView);
 
